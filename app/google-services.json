@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "529517588949",
+    "firebase_url": "https://thethtar-30264.firebaseio.com",
+    "project_id": "thethtar-30264",
+    "storage_bucket": "thethtar-30264.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529517588949:android:ffe84b0968ca73204d8d5c",
+        "android_client_info": {
+          "package_name": "com.mt.shweba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529517588949-34rb8g3mfgg95ff8glre8288punicbqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAtSW3JHeJ7WjaIC5a1S4eDJGmQi65DKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529517588949-34rb8g3mfgg95ff8glre8288punicbqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
