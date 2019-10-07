@@ -18,33 +18,37 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+
 public class MainActivity extends AppCompatActivity {
-Button btn;
+Button l_btn,s_btn;
 EditText uname,upassword;
 DatabaseReference reff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      btn=(Button)findViewById(R.id.button5);
+      l_btn=(Button)findViewById(R.id.login);
+      s_btn=(Button)findViewById(R.id.signup);
       uname=(EditText) findViewById(R.id.editText);
       upassword=(EditText)findViewById(R.id.editText2);
-        reff= FirebaseDatabase.getInstance().getReference().child("Member").child("1");
+        reff= FirebaseDatabase.getInstance().getReference().child("Member");
 
 
         ConnectivityManager cManager=(ConnectivityManager)getSystemService(this.CONNECTIVITY_SERVICE);
         NetworkInfo nInfo=cManager.getActiveNetworkInfo();
+
         if(nInfo!=null && nInfo.isConnected()){
-            btn.setOnClickListener(new View.OnClickListener() {
+            l_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     reff.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            String name = dataSnapshot.child("name").getValue().toString();
-                            String age = dataSnapshot.child("age").getValue().toString();
                             String user_name = uname.getText().toString().trim();
                             String user_password = upassword.getText().toString().trim();
+                            String name = dataSnapshot.child("name").getValue().toString();
+                            String age = dataSnapshot.child("age").getValue().toString();
+
                             if (uname.getText().toString().equals(name) && upassword.getText().toString().equals(age)) {
                                 Intent intent = new Intent(MainActivity.this, Post.class);
                                 startActivity(intent);
@@ -62,6 +66,19 @@ DatabaseReference reff;
                     });
                 }
             });
+s_btn.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        String i_name= uname.getText().toString().trim();
+        String i_password = upassword.getText().toString().trim();
+Member member=new Member();
+        member.setName(i_name);
+member.setPassword(i_password);
+                reff.child(i_name).setValue(member);
+
+        Toast.makeText(MainActivity.this,"PP",Toast.LENGTH_LONG).show();
+    }
+});
         }
         else{
             Toast.makeText(MainActivity.this,"Open Internet",Toast.LENGTH_LONG).show();
