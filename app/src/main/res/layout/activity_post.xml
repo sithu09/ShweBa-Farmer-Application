@@ -4,15 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
     tools:context=".Post">
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Post Activity"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="193dp" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="32dp"
+        android:text="WARTER-DAM"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="32dp"
+        android:text="FEEDBACK-REPO"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="32dp"
+        android:text="TECHNICAL"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="32dp"
+        android:text="MEDICAL"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="32dp"
+        android:text="SAIL-POST"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="32dp"
+        android:text="CALL-CARRY"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="32dp"
+        android:text="COST"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="32dp"
+        android:text="BUY-THING"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="32dp"
+        android:text="NEWS"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="163dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="32dp"
+        android:text="WEATHER"
+        android:textSize="16dp"
+        android:background="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="38dp"
+        android:text="Farmer Channel"
+        android:textSize="25dp"
+        android:paddingLeft="300px"
+        android:paddingTop="30px"
+        android:textColor=" #2c3e50"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
