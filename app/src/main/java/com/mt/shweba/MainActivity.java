@@ -72,15 +72,18 @@ DatabaseReference reff,up_reff;
             s_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    up_reff= FirebaseDatabase.getInstance().getReference();
-                    String i_name = uname.getText().toString().trim();
-                    String i_password = upassword.getText().toString().trim();
-                    Member member = new Member();
-                    member.setName(i_name);
-                    member.setPassword(i_password);
-                    up_reff.child(i_name).setValue(member);
+//                    up_reff= FirebaseDatabase.getInstance().getReference();
+//                    String i_name = uname.getText().toString().trim();
+//                    String i_password = upassword.getText().toString().trim();
+//                    Member member = new Member();
+//                    member.setName(i_name);
+//                    member.setPassword(i_password);
+//                    up_reff.child(i_name).setValue(member);
 
-                    Toast.makeText(MainActivity.this, "PP", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(MainActivity.this, "PP", Toast.LENGTH_LONG).show();
+
+                    Intent intent = new Intent(MainActivity.this, Signup.class);
+                    startActivity(intent);
                 }
             });
         } else {
