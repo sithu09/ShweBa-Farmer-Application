@@ -37,8 +37,6 @@ RadioGroup radioGroup;
             radioGroup=(RadioGroup)findViewById(R.id.radio) ;
 
 
-
-
             login.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -55,13 +53,20 @@ RadioGroup radioGroup;
                     int selectfield=radioGroup.getCheckedRadioButtonId();
                     fields=findViewById(selectfield);
                     String field=fields.getText().toString();
-                    reff = FirebaseDatabase.getInstance().getReference();
+//
+                    if(user_name.length()==0  || selectfield==0 || user_password.length()==0){
+                        Toast.makeText(Signup.this,"Error",Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        reff = FirebaseDatabase.getInstance().getReference();
                  Member member=new Member();
                     member.setName(user_name);
                     member.setPassword(user_password);
                     member.setField(field);
                     reff.child(user_name).setValue(member);
-             Toast.makeText(Signup.this,"အကောင့်ဖွင့်ပြီးပါပြီ",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Signup.this,"အကောင့်ဖွင့်ပြီးပါပြီ",Toast.LENGTH_LONG).show();
+                    }
+//
                 }
             });
 

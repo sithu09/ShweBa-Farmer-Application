@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 Button l_btn,s_btn;
 EditText uname,upassword;
 DatabaseReference reff,up_reff;
-
+String farmer,canel,carry,broker,shoper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,6 @@ DatabaseReference reff,up_reff;
         s_btn = (Button) findViewById(R.id.signup);
         uname = (EditText) findViewById(R.id.editText);
         upassword = (EditText) findViewById(R.id.editText2);
-
 
         ConnectivityManager cManager = (ConnectivityManager) getSystemService(this.CONNECTIVITY_SERVICE);
         NetworkInfo nInfo = cManager.getActiveNetworkInfo();
@@ -51,20 +50,46 @@ DatabaseReference reff,up_reff;
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+                            farmer="တောင်သူ";
+                            canel="ဆည်မြောင်းဌာန";
+                            carry="ကယ်ရီ";
+                            broker="ပွဲရုံ";
+                            shoper="စျေးဆိုင်";
                             String d_password= dataSnapshot.child("password").getValue().toString();
                             String d_name= dataSnapshot.child("name").getValue().toString();
+                            String field=dataSnapshot.child("field").getValue().toString();
 
-                            if (uname.getText().toString().equals(d_name) && upassword.getText().toString().equals(d_password))
+                           if (uname.getText().toString().equals(d_name) && upassword.getText().toString().equals(d_password)&& field.equals(farmer))
                             {
-                                Intent intent = new Intent(MainActivity.this, Post.class);
+
+                                    Intent intent = new Intent(MainActivity.this, Post.class);
+                                    startActivity(intent);
+//                                Toast.makeText(MainActivity.this,field,Toast.LENGTH_LONG).show();
+
+
+                            }
+                            else if (uname.getText().toString().equals(d_name) && upassword.getText().toString().equals(d_password)&&field.equals(canel)){
+                                Intent intent = new Intent(MainActivity.this, Canel.class);
                                 startActivity(intent);
                             }
-                            else if (user_name.length() == 0 || user_password.length() == 0) {
-                                Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
+                            else if (uname.getText().toString().equals(d_name) && upassword.getText().toString().equals(d_password)&&field.equals(carry)){
+                                Intent intent = new Intent(MainActivity.this, Carry.class);
+                                startActivity(intent);
                             }
-                            else if(user_name != d_name || user_password!= d_password) {
-                                Toast.makeText(MainActivity.this, "User name of password wrong", Toast.LENGTH_LONG).show();
+                            else if (uname.getText().toString().equals(d_name) && upassword.getText().toString().equals(d_password)&&field.equals(broker)){
+                                Intent intent = new Intent(MainActivity.this, Broker.class);
+                                startActivity(intent);
                             }
+                            else {
+                                Intent intent = new Intent(MainActivity.this, Shoper.class);
+                                startActivity(intent);
+                            }
+//                            if(user_name.length() == 0 || user_password.length() == 0) {
+//                                Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
+//                            }
+//                            if(user_name != d_name || user_password!= d_password) {
+//                                Toast.makeText(MainActivity.this, "User name of password wrong", Toast.LENGTH_LONG).show();
+//                            }
                         }
 
                         @Override
@@ -72,7 +97,7 @@ DatabaseReference reff,up_reff;
 
                         }
                     });
-
+//
                 }
             });
 

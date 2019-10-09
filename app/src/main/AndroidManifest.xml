@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signup"></activity>
+        <activity android:name=".Shoper"></activity>
+        <activity android:name=".Broker" />
+        <activity android:name=".Carry" />
+        <activity android:name=".Canel" />
+        <activity android:name=".Signup" />
         <activity android:name=".Post" />
         <activity android:name=".MainActivity">
             <intent-filter>

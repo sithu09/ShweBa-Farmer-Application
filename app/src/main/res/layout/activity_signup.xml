@@ -56,10 +56,10 @@
 
             <RadioButton
                 android:id="@+id/cbutton"
-                android:layout_width="200dp"
+                android:layout_width="280dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="20dp"
-                android:text="ဆည်မြောင်းဌာန"
+                android:text="သမဝါယမ/ဆည်မြောင်းဌာန"
                 android:textSize="20dp" />
 
             <RadioButton
