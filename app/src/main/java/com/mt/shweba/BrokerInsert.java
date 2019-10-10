@@ -5,10 +5,28 @@ public class BrokerInsert {
     private  String price;
     private String date;
     private String name;
+    private String location;
+    private String phoneno;
 
 public BrokerInsert(){
 
         }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getPhoneno() {
+        return phoneno;
+    }
+
+    public void setPhoneno(String phoneno) {
+        this.phoneno = phoneno;
+    }
 
     public String getGoods() {
         return goods;

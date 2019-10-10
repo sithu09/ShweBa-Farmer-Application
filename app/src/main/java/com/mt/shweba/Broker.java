@@ -8,16 +8,24 @@ import android.view.View;
 import android.widget.Button;
 
 public class Broker extends AppCompatActivity {
-    Button post;
+    Button post,check;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broker);
         post=(Button)findViewById(R.id.post);
+        check=(Button)findViewById(R.id.check) ;
         post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Broker.this,Brokerpost.class);
+                startActivity(intent);
+            }
+        });
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Broker.this,BrokerRetrieve.class);
                 startActivity(intent);
             }
         });

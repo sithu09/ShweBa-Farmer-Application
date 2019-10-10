@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Brokerpost extends AppCompatActivity {
-EditText goods,prices,dates,names;
+EditText goods,prices,dates,names,locations,phonenos;
 Button posts;
 DatabaseReference reff;
     @Override
@@ -29,6 +29,8 @@ DatabaseReference reff;
         prices=(EditText)findViewById(R.id.price);
         dates=(EditText)findViewById(R.id.date);
         names=(EditText)findViewById(R.id.name);
+        locations=(EditText)findViewById(R.id.location);
+        phonenos=(EditText) findViewById(R.id.phoneno);
 
         posts=(Button) findViewById(R.id.post);
 
@@ -41,14 +43,18 @@ DatabaseReference reff;
                String price=prices.getText().toString().trim();
                String date=dates.getText().toString().trim();
                String name=names.getText().toString().trim();
+               String location=locations.getText().toString().trim();
+               String phoneno=phonenos.getText().toString().trim();
 
-               if(good.length()==0 || price.length()==0 || date.length()==0 || name.length()==0){
+               if(good.length()==0 || price.length()==0 || date.length()==0 || name.length()==0 || location.length()==0 || phoneno.length()==0){
                    Toast.makeText(Brokerpost.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                }
                else {
                    binsert.setGoods(good);
                    binsert.setPrice(price);
                    binsert.setName(name);
+                   binsert.setLocation(location);
+                   binsert.setPhoneno(phoneno);
                    binsert.setDate(date);
                    reff.child(name).setValue(binsert);
                    Toast.makeText(Brokerpost.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်",Toast.LENGTH_LONG).show();
