@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Broker">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:paddingTop="50px"
+            android:text="ပွဲရုံကဏ္ဍ"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:background="@color/colorbroker"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/goods"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30px"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ကုန်ပစ္စည်း"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30px"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="စျေးနှုန်း"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30px"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ဆိုင်နာမည်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30px"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ရက်စွဲ"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30px"
+            android:background="@drawable/loginbutton"
+            android:text="တင်မည်"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="30px"
+            android:text="မှတ်ချက်  -   သင်၏ကုန်ပစ္စည်းအမည်နှင့် စျေးနှုန်းများကို မှန်ကန်စွာ တင်ပေးပါ။ ရက်စွဲကို မြန်မာရက် သို့ အင်္ဂလိပ်ရက် ဖြင့်ဖြည့်စွက်ပါ။
+ဥပမာ - ကုလားပဲ(တစ်တင်း)  - ၅၅၀၀၀ကျပ်  - ငြိမ်းသူဇာ  - တပို့တွဲလဆန်း ၂ ရက်"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
