@@ -51,7 +51,7 @@ String farmer,canel,carry,broker,shoper;
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                             farmer="တောင်သူ";
-                            canel="ဆည်မြောင်းဌာန";
+                            canel="သမဝါယမ/ဆည်မြောင်းဌာန";
                             carry="ကယ်ရီ";
                             broker="ပွဲရုံ";
                             shoper="စျေးဆိုင်";
