@@ -4,13 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Carry">
+    tools:context=".Broker">
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Carry"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="250dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#6384b3"
+            android:paddingTop="25px"
+            android:text="ပို့ဆောင်ရေးကဏ္ဍ"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="#dedede"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="နာမည်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="နေရပ်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ဖုန်းနံပါတ်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ယာဥ်အမျိုးအစား"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/loginbutton"
+            android:text="တင်မည်"
+            android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="30px"
+                    android:text="မှတ်ချက်  -   ငှါးရမ်းသူသည် သင်၏ဖုန်းနံပါတ်မှတစ်ဆင့် ဆက်သွယ်မည်ဖြစ်သည်။
+ဖုန်းနံပါတ်ကို မှန်ကန်စွာ ဖြည့်စွက်ပေးပါ။"
+                    android:textSize="50px"
+                    android:textStyle="bold" />
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

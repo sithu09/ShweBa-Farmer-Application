@@ -14,7 +14,7 @@
        android:layout_height="70dp"
        android:background="@color/colorPrimary"
        android:paddingTop="25px"
-       android:text="ပွဲရုံကဏ္ဍ"
+       android:text="သီးနှံစျေးနှုန်း"
        android:textAlignment="center"
        android:textSize="35dp"
        android:textStyle="bold"
