@@ -58,14 +58,15 @@ DatabaseReference reff;
                    binsert.setLocation(location);
                    binsert.setPhoneno(phoneno);
                    binsert.setDate(date);
-                   binsert.setCodeno(codeno);
                    reff.child(codeno).setValue(binsert);
-                   Toast.makeText(Brokerpost.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်။ ",Toast.LENGTH_LONG).show();
+                   Toast.makeText(Brokerpost.this,"သင်၏ စျေးနှုန်းသတ်မှတ်ချက် အောင်မြင်ပါသည်။ကုတ််နံပါတ်ပြောင်း၍ အခြားသီးနှံစျေးနှုန်းများ သတ်မှတ်နိုင်သည်။ ",Toast.LENGTH_LONG).show();
                }
            }
        });
 
-
+//သင်၏ စျေးနှုန်းသတ်မှတ်ချက် အောင်မြင်ပါသည်။ကုတ််နံပါတ်ပြောင်း၍ အခြားသီးနှံစျေးနှုန်းများ သတ်မှတ်နိုင်သည်။
+//
+//စျေးကွက်
             }
         }
 //ကုန်ပစ္စည်းတစ်ကြိမ်တင်လျှင် ကုတ်နံပါတ်တစ်ခါ ပြောင်းပါ။

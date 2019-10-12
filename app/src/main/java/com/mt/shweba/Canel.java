@@ -45,7 +45,6 @@ public class Canel extends AppCompatActivity {
                     cinsert.setDepartment(departments);
                     cinsert.setSummary(summmaries);
                     cinsert.setTopic(topics);
-                    cinsert.setNo(no);
                     reff.child(no).setValue(cinsert);
                     Toast.makeText(Canel.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်",Toast.LENGTH_LONG).show();
                 }

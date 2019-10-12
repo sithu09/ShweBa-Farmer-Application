@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Shoper">
+    tools:context=".FarmerInsert">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -18,7 +18,7 @@
             android:layout_height="60dp"
             android:background="#DA70D6"
             android:paddingTop="30px"
-            android:text=" ဆေး/လုပ်ငန်းသုံးကိရိယာ"
+            android:text="အရောင်းကဏ္ဍ"
             android:textAlignment="center"
             android:textSize="27dp"
             android:textStyle="bold"
@@ -26,7 +26,11 @@
             tools:layout_editor_absoluteY="55dp" />
 
     </LinearLayout>
-
+<!--ပမာဏ
+သင်၏ရောင်းကုန်ပစ္စည်းအား
+စျေးကွက်သို့ တင်ပါိ့ပြီးပါပြီ။
+အခြားကုန်များ ထပ်မံတင်လိုပါက
+ကုတ်နံပါတ် ပြောင်းပေးပါ။-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,7 +55,7 @@
             android:padding="15dp" />
 
         <EditText
-            android:id="@+id/price"
+            android:id="@+id/amount"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
@@ -59,7 +63,7 @@
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
-            android:hint="စျေးနှုန်း"
+            android:hint="ပမာဏ"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -76,6 +80,18 @@
             android:inputType="textPersonName"
             android:padding="15dp" />
 
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext"
+            android:ems="15"
+            android:hint="ရက်စွဲ"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/name"
@@ -86,7 +102,7 @@
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
-            android:hint="ဆိုင်နာမည်"
+            android:hint="နာမည်"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -99,32 +115,34 @@
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
-            android:hint="တည်နေရာ"
+            android:hint="နေရပ်"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext"
+            android:ems="15"
+            android:hint="ဖုန်းနံပါတ်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
-            <Button
-                android:id="@+id/post"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="25dp"
-                android:background="@drawable/loginbutton"
-                android:text="ကိရိယာပစ္စည်းအရောင်းတင်မည်"
-                android:textSize="20dp" />
+        <Button
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/loginbutton"
+            android:text="ကုန်ပစ္စည်းအရောင်းတင်မည်"
+            android:textSize="20dp" />
 
-            <Button
-                android:id="@+id/spost"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="25dp"
-                android:background="@drawable/loginbutton"
-                android:text="ဆေးပစ္စည်းအရောင်းတင်မည်"
-                android:textSize="20dp" />
 
     </LinearLayout>
 

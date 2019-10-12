@@ -33,10 +33,9 @@ public class CanelRetrieve extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     String topic= snapshot.child("topic").getValue().toString();
                     String department= snapshot.child("department").getValue().toString();
-                    String no=snapshot.child("no").getValue().toString();
                     String date=snapshot.child("date").getValue().toString();
                     String summary=snapshot.child("summary").getValue().toString();
-                    String  all= "\nခေါင်းစဥ် : " +"\t" + topic + "\n"+ "ဌာန : " +"\t" + department + "\n" + "အမှတ်စဥ် : " + "\t" + no+ "\n" + "ရက်စွဲ: " + "\t" + date + "\n" + "အကြောင်းအရာ အကျဥ်းချုပ်: " + "\t" + summary + "\n" ;
+                    String  all= "\nခေါင်းစဥ် : " +"\t" + topic + "\n"+ "ဌာန : " +"\t" + department + "\n" + "ရက်စွဲ: " + "\t" + date + "\n" + "အကြောင်းအရာ အကျဥ်းချုပ်: " + "\t" + summary + "\n" ;
 //ဌာန
 //ခေါင်းစဥ်
 //ဌာန

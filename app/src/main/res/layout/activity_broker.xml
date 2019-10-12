@@ -39,7 +39,7 @@
 
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/view"
             android:layout_width="273dp"
             android:layout_height="126dp"
             android:layout_marginLeft="175px"
@@ -69,7 +69,7 @@
             android:layout_marginLeft="175px"
             android:layout_marginTop="150px"
             android:background="@drawable/broker"
-            android:text="ကုန်ပစ္စည်းစာရင်း"
+            android:text="ကုန်ပစ္စည်းစျေးကွက်"
             android:textSize="20dp"
             tools:layout_editor_absoluteX="69dp"
             tools:layout_editor_absoluteY="179dp" />

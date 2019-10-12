@@ -61,5 +61,12 @@ Button cost,sell,carry,buy,medical,canel,information,weather,technical,feedback;
                 startActivity(intent);
             }
         });
+        sell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Post.this,FarmerInsert.class);
+                startActivity(intent);
+            }
+        });
     }
 }
