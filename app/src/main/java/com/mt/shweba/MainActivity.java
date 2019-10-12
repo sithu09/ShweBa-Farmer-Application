@@ -44,7 +44,7 @@ String farmer,canel,carry,broker,shoper;
 
                     final String user_name = uname.getText().toString().trim();
                     final String user_password = upassword.getText().toString().trim();
-                    reff = FirebaseDatabase.getInstance().getReference().child(user_name);
+                    reff = FirebaseDatabase.getInstance().getReference().child("User").child(user_name);
                     reff.addValueEventListener(new ValueEventListener() {
 
                         @Override

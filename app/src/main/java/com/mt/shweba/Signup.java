@@ -54,11 +54,11 @@ RadioGroup radioGroup;
                     fields=findViewById(selectfield);
                     String field=fields.getText().toString();
 //
-                    if(user_name.length()==0  || selectfield==0 || user_password.length()==0){
+                    if(user_name.length()==0  || field.length()==0 || user_password.length()==0){
                         Toast.makeText(Signup.this,"Error",Toast.LENGTH_LONG).show();
                     }
                     else {
-                        reff = FirebaseDatabase.getInstance().getReference();
+                        reff = FirebaseDatabase.getInstance().getReference("User");
                  Member member=new Member();
                     member.setName(user_name);
                     member.setPassword(user_password);
@@ -69,8 +69,6 @@ RadioGroup radioGroup;
 //
                 }
             });
-
-
 
     }
 }

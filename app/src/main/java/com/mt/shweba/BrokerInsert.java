@@ -7,10 +7,19 @@ public class BrokerInsert {
     private String name;
     private String location;
     private String phoneno;
+    private String codeno;
 
 public BrokerInsert(){
 
         }
+
+    public String getCodeno() {
+        return codeno;
+    }
+
+    public void setCodeno(String codeno) {
+        this.codeno = codeno;
+    }
 
     public String getLocation() {
         return location;

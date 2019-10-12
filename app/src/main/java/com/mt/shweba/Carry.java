@@ -45,7 +45,7 @@ DatabaseReference reff;
                    cinsert.setLocation(locations);
                    cinsert.setPhone(phonenos);
                    cinsert.setType(types);
-                    reff.child(names).setValue(cinsert);
+                    reff.child(phonenos).setValue(cinsert);
                     Toast.makeText(Carry.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်",Toast.LENGTH_LONG).show();
                 }
             }

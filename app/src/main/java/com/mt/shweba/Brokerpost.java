@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Brokerpost extends AppCompatActivity {
-EditText goods,prices,dates,names,locations,phonenos;
+EditText goods,prices,dates,names,locations,phonenos,codenos;
 Button posts;
 DatabaseReference reff;
     @Override
@@ -31,6 +31,7 @@ DatabaseReference reff;
         names=(EditText)findViewById(R.id.name);
         locations=(EditText)findViewById(R.id.location);
         phonenos=(EditText) findViewById(R.id.phoneno);
+        codenos=(EditText) findViewById(R.id.codeno);
 
         posts=(Button) findViewById(R.id.post);
 
@@ -45,8 +46,9 @@ DatabaseReference reff;
                String name=names.getText().toString().trim();
                String location=locations.getText().toString().trim();
                String phoneno=phonenos.getText().toString().trim();
+               String codeno=codenos.getText().toString().trim();
 
-               if(good.length()==0 || price.length()==0 || date.length()==0 || name.length()==0 || location.length()==0 || phoneno.length()==0){
+               if(good.length()==0 || price.length()==0 || date.length()==0 || name.length()==0 || location.length()==0 || phoneno.length()==0 || codeno.length()==0){
                    Toast.makeText(Brokerpost.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                }
                else {
@@ -56,8 +58,9 @@ DatabaseReference reff;
                    binsert.setLocation(location);
                    binsert.setPhoneno(phoneno);
                    binsert.setDate(date);
-                   reff.child(name).setValue(binsert);
-                   Toast.makeText(Brokerpost.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်",Toast.LENGTH_LONG).show();
+                   binsert.setCodeno(codeno);
+                   reff.child(codeno).setValue(binsert);
+                   Toast.makeText(Brokerpost.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်။ ",Toast.LENGTH_LONG).show();
                }
            }
        });
@@ -65,3 +68,6 @@ DatabaseReference reff;
 
             }
         }
+//ကုန်ပစ္စည်းတစ်ကြိမ်တင်လျှင် ကုတ်နံပါတ်တစ်ခါ ပြောင်းပါ။
+//
+//လေးလုံး

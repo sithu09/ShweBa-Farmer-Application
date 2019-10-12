@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CanelRetrieve"></activity>
+        <activity android:name=".MShoperRetrieve"></activity>
+        <activity android:name=".ShoperRetrieve" />
+        <activity android:name=".CanelRetrieve" />
         <activity android:name=".CarryRetrieve" />
         <activity android:name=".BrokerRetrieve" />
         <activity android:name=".Brokerpost" />
