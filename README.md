@@ -1,5 +1,5 @@
 # ShweBa
-Aim of my app is to know goods market price for farmer.
+Aim of my app is to know update goods market price for farmer.
 In project used firebase database,
 app can use android version 6.0 and upper.
 #sithu
