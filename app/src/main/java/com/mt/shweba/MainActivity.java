@@ -45,6 +45,10 @@ String farmer,canel,carry,broker,shoper;
                     final String user_name = uname.getText().toString().trim();
                     final String user_password = upassword.getText().toString().trim();
                     reff = FirebaseDatabase.getInstance().getReference().child("User").child(user_name);
+                    if(user_name.length() == 0 || user_password.length() == 0){
+                        Toast.makeText(MainActivity.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
+                    }
+                    else{
                     reff.addValueEventListener(new ValueEventListener() {
 
                         @Override
@@ -85,7 +89,7 @@ String farmer,canel,carry,broker,shoper;
                                 startActivity(intent);
                             }
 //     I Knowned this case must checked                       if(user_name.length() == 0 || user_password.length() == 0) {
-//   But my app is testing app and  idea                            Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
+//   But my app is testing app and  idea  checking app                        Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
 //                            }
 //                            if(user_name != d_name || user_password!= d_password) {
 //                                Toast.makeText(MainActivity.this, "User name of password wrong", Toast.LENGTH_LONG).show();
@@ -96,7 +100,7 @@ String farmer,canel,carry,broker,shoper;
                         public void onCancelled(@NonNull DatabaseError databaseError) {
 
                         }
-                    });
+                    });}
 //
                 }
             });
