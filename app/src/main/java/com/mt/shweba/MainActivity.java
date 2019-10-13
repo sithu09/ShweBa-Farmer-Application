@@ -84,8 +84,8 @@ String farmer,canel,carry,broker,shoper;
                                 Intent intent = new Intent(MainActivity.this, Shoper.class);
                                 startActivity(intent);
                             }
-//                            if(user_name.length() == 0 || user_password.length() == 0) {
-//                                Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
+//     I Knowned this case must checked                       if(user_name.length() == 0 || user_password.length() == 0) {
+//   But my app is testing app and  idea                            Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
 //                            }
 //                            if(user_name != d_name || user_password!= d_password) {
 //                                Toast.makeText(MainActivity.this, "User name of password wrong", Toast.LENGTH_LONG).show();

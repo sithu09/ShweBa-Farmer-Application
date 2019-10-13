@@ -112,7 +112,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/loginbutton"
-                android:text="ကိရိယာပစ္စည်းအရောင်းတင်မည်"
+                android:text="လုပ်ငန်းသုံးပစ္စည်းအရောင်းတင်မည်"
                 android:textSize="20dp" />
 
             <Button

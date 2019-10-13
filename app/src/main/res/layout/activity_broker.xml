@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/abacus"
     tools:context=".Broker">
 
     <LinearLayout
@@ -15,12 +16,12 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:background="@color/colorPrimary"
-            android:paddingTop="50px"
+            android:paddingTop="40px"
             android:text="ပွဲရုံကဏ္ဍ"
             android:textAlignment="center"
-            android:textSize="35dp"
+            android:textSize="30dp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="78dp"
             tools:layout_editor_absoluteY="55dp" />
@@ -32,8 +33,8 @@
         android:layout_marginTop="110dp"
         android:layout_marginLeft="20px"
         android:layout_marginRight="20px"
-        android:background="@color/colorbroker"
         android:orientation="vertical"
+        android:alpha="0.9"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:layout_editor_absoluteX="19dp">
 
@@ -43,7 +44,7 @@
             android:layout_width="273dp"
             android:layout_height="126dp"
             android:layout_marginLeft="175px"
-            android:layout_marginTop="250px"
+            android:layout_marginTop="160px"
             android:background="@drawable/broker"
             android:text="ရောင်းကုန်ကြည့်မည်"
             android:textSize="20dp"

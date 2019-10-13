@@ -55,7 +55,7 @@ RadioGroup radioGroup;
                     String field=fields.getText().toString();
 //
                     if(user_name.length()==0  || field.length()==0 || user_password.length()==0){
-                        Toast.makeText(Signup.this,"Error",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Signup.this,"ြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                     }
                     else {
                         reff = FirebaseDatabase.getInstance().getReference("User");
