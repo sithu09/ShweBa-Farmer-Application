@@ -68,5 +68,33 @@ Button cost,sell,carry,buy,medical,canel,information,weather,technical,feedback;
                 startActivity(intent);
             }
         });
+        weather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Post.this,WeatherRetrieve.class);
+                startActivity(intent);
+            }
+        });
+        technical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Post.this,TechnicalRetrieve.class);
+                startActivity(intent);
+            }
+        });
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Post.this,Feedback.class);
+                startActivity(intent);
+            }
+        });
+        information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Post.this,FarmerNews.class);
+                startActivity(intent);
+            }
+        });
     }
 }

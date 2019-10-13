@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherRetrieve"
+    android:textSize="35dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="25px"
+        android:text="မိုးလေဝသသတင်း"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="55dp" />
+    <ListView
+        android:id="@+id/weatherlistView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:layout_marginTop="20px"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

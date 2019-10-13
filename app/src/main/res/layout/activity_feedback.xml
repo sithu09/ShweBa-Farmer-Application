@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#76dbd1"
+            android:paddingTop="30px"
+            android:text="အကြံပြုစာပို့ရန်"
+            android:textAlignment="center"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="5dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30px"
+            android:paddingBottom="70px"
+            android:layout_marginTop="35px"
+            android:hint="ခေါင်းစဥ်\n"
+            android:inputType="textPersonName"/>
+
+<!--အကြံပြုချက်ရေးရန်
+
+အကြံပြုစာပို့ရန်
+
+ပို့မည်-->
+
+        <EditText
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="left|top"
+            android:paddingLeft="30px"
+            android:layout_marginTop="35px"
+            android:hint="အကြံပြုချက်ရေးရန်"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="92dp">
+
+            <requestFocus />
+
+        </EditText>
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_marginTop="55px"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="70dp"
+            android:background="@drawable/loginbutton"
+            android:text="ပို့မည်"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_marginTop="150dp"
+           android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_weight="5"
+            android:textStyle="bold"
+            android:text="Admin-Team:PhoneNo\n 09691788837" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
