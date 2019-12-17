@@ -6,10 +6,19 @@ public class Member {
     private String Name;
     private  String Password;
     private String Field;
+    private String Location;
 
 
     public Member(){
 
+    }
+
+    public String getLocation() {
+        return Location;
+    }
+
+    public void setLocation(String location) {
+        Location = location;
     }
 
     public String getField() {

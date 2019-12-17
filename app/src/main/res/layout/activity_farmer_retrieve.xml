@@ -20,6 +20,7 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="55dp" />
+
     <ListView
         android:id="@+id/farmerlistView"
         android:layout_width="match_parent"

@@ -65,6 +65,19 @@
             android:padding="15dp" />
 
         <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ရက်စွဲ"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
             android:id="@+id/codeno"
             android:layout_width="match_parent"
             android:layout_height="65dp"
@@ -74,19 +87,6 @@
             android:background="@drawable/edittext"
             android:ems="25"
             android:hint="ကုတ်နံပါတ်"
-            android:inputType="textPersonName"
-            android:padding="15dp" />
-
-        <EditText
-            android:id="@+id/phoneno"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/edittext"
-            android:ems="25"
-            android:hint="ရက်စွဲ"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -104,7 +104,7 @@
             android:padding="15dp" />
 
         <EditText
-            android:id="@+id/date"
+            android:id="@+id/phoneno"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="20dp"
@@ -112,7 +112,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/edittext"
             android:ems="25"
-            android:hint="တည်နေရာ"
+            android:hint="ဖုန်းနံပါတ်"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -125,7 +125,20 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/edittext"
             android:ems="25"
-            android:hint="ဖုန်းနံပါတ်"
+            android:hint="တည်နေရာ"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/btown"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="မြို့နယ်"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -140,16 +153,16 @@
             android:text="တင်မည်"
             android:textSize="20dp" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/textView3"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_marginLeft="30px"-->
-<!--            android:layout_marginTop="15dp"-->
-<!--            android:layout_marginRight="30px"-->
-<!--            android:text="မှတ်ချက်  -   ကုန်ပစ္စည်းတစ်ကြိမ်တင်လျှင် ကုတ်နံပါတ်တစ်ခါ ပြောင်းပါ"-->
-<!--            android:textSize="50px"-->
-<!--            android:textStyle="bold" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/textView3"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginLeft="30px"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:layout_marginRight="30px"-->
+        <!--            android:text="မှတ်ချက်  -   ကုန်ပစ္စည်းတစ်ကြိမ်တင်လျှင် ကုတ်နံပါတ်တစ်ခါ ပြောင်းပါ"-->
+        <!--            android:textSize="50px"-->
+        <!--            android:textStyle="bold" />-->
 
     </LinearLayout>
 

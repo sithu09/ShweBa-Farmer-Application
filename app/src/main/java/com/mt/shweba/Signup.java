@@ -31,10 +31,14 @@ RadioGroup radioGroup;
             name = (EditText) findViewById(R.id.name);
             password = (EditText) findViewById(R.id.password);
 
+
+
             login = (Button) findViewById(R.id.login);
             signup = (Button) findViewById(R.id.signup);
 
-            radioGroup=(RadioGroup)findViewById(R.id.radio) ;
+
+
+        radioGroup=(RadioGroup)findViewById(R.id.radio) ;
 
 
             login.setOnClickListener(new View.OnClickListener() {
@@ -45,15 +49,17 @@ RadioGroup radioGroup;
                 }
             });
 
+
             signup.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     String user_name = name.getText().toString().trim();
                     String user_password = password.getText().toString().trim();
+//                    အရူး မလိုဘူး String user_location=location.getText().toString().trim();
                     int selectfield=radioGroup.getCheckedRadioButtonId();
                     fields=findViewById(selectfield);
                     String field=fields.getText().toString();
-//
                     if(user_name.length()==0  || field.length()==0 || user_password.length()==0){
                         Toast.makeText(Signup.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                     }
@@ -72,3 +78,5 @@ RadioGroup radioGroup;
 
     }
 }
+
+//ဝေးကွာခြင်းမှာ နေသားကျဖို့ ထပ်ပြီးဝေးပေးလိုက်ရခြင်းဟာ ရင်နာစရာပါပဲ သက်ထားရေ

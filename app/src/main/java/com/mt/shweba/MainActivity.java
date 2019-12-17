@@ -42,6 +42,8 @@ String farmer,canel,carry,broker,shoper;
                 @Override
                 public void onClick(View v) {
 
+
+
                     final String user_name = uname.getText().toString().trim();
                     final String user_password = upassword.getText().toString().trim();
                     reff = FirebaseDatabase.getInstance().getReference().child("User").child(user_name);
@@ -88,7 +90,7 @@ String farmer,canel,carry,broker,shoper;
                                 Intent intent = new Intent(MainActivity.this, Shoper.class);
                                 startActivity(intent);
                             }
-//     I Knowned this case must checked                       if(user_name.length() == 0 || user_password.length() == 0) {
+//     I know this case must checked                       if(user_name.length() == 0 || user_password.length() == 0) {
 //   But my app is testing app and  idea  checking app                        Toast.makeText(MainActivity.this, "Fill your name and password", Toast.LENGTH_LONG).show();
 //                            }
 //                            if(user_name != d_name || user_password!= d_password) {

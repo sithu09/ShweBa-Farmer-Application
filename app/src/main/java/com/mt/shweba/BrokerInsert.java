@@ -8,10 +8,19 @@ public class BrokerInsert {
     private String location;
     private String phoneno;
     private String codeno;
+    private String btown;
 
-public BrokerInsert(){
+    public BrokerInsert(){
 
-        }
+    }
+
+    public String getBtown() {
+        return btown;
+    }
+
+    public void setBtown(String btown) {
+        this.btown = btown;
+    }
 
     public String getCodeno() {
         return codeno;

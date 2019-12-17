@@ -8,18 +8,48 @@
     android:textSize="35dp"
     android:orientation="vertical">
 
-   <TextView
-       android:id="@+id/textView2"
-       android:layout_width="match_parent"
-       android:layout_height="70dp"
-       android:background="@color/colorPrimary"
-       android:paddingTop="25px"
-       android:text="သီးနှံစျေးနှုန်း"
-       android:textAlignment="center"
-       android:textSize="35dp"
-       android:textStyle="bold"
-       tools:layout_editor_absoluteX="78dp"
-       tools:layout_editor_absoluteY="55dp" />
+<!--   <TextView-->
+<!--       android:id="@+id/textView2"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="70dp"-->
+<!--       android:background="@color/colorPrimary"-->
+<!--       android:paddingTop="25px"-->
+<!--       android:text="သီးနှံစျေးနှုန်း"-->
+<!--       android:textAlignment="center"-->
+<!--       android:textSize="35dp"-->
+<!--       android:textStyle="bold"-->
+<!--       tools:layout_editor_absoluteX="78dp"-->
+<!--       tools:layout_editor_absoluteY="55dp" />-->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10px"
+   android:orientation="horizontal">
+
+   <EditText
+       android:id="@+id/town"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20px"
+       android:hint="မြို့နယ်နာမည်"
+       android:background="@drawable/rounded_edittext"
+       android:inputType="textPersonName"
+       android:padding="15dp" />
+
+   <Button
+       android:id="@+id/farmer_market"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+       android:background="@drawable/round_button"
+       android:gravity="center_vertical|center_horizontal"
+       android:layout_marginLeft="25px"
+       android:text="ရှာမည်"
+       android:textColor="#fff" />
+
+</LinearLayout>
+
+
    <ListView
        android:id="@+id/listView"
        android:layout_width="match_parent"

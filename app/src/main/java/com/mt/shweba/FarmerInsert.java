@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class FarmerInsert extends AppCompatActivity {
-EditText type,amount,codeno,name,location,phoneno,date;
+EditText type,amount,codeno,name,location,phoneno,date,locations;
 Button post;
     DatabaseReference reff;
     @Override
@@ -28,6 +28,7 @@ Button post;
      location=(EditText)findViewById(R.id.location);
      phoneno=(EditText)findViewById(R.id.phoneno);
      post=(Button) findViewById(R.id.post);
+
 
      post.setOnClickListener(new View.OnClickListener() {
          @Override
