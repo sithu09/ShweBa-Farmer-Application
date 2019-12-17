@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class FarmerInsert extends AppCompatActivity {
-EditText type,amount,codeno,name,location,phoneno,date,locations;
+EditText type,amount,codeno,name,location,phoneno,date,locations,ftown;
 Button post;
     DatabaseReference reff;
     @Override
@@ -27,6 +27,7 @@ Button post;
      name=(EditText)findViewById(R.id.name);
      location=(EditText)findViewById(R.id.location);
      phoneno=(EditText)findViewById(R.id.phoneno);
+     ftown=(EditText)findViewById(R.id.ftown);
      post=(Button) findViewById(R.id.post);
 
 
@@ -44,6 +45,7 @@ Button post;
              String codenos=codeno.getText().toString().trim();
              String types=type.getText().toString().trim();
              String amounts=amount.getText().toString().trim();
+             String ftowns=ftown.getText().toString().trim();
 
              if(dates.length()==0 || names.length()==0 || locations.length()==0 || phonenos.length()==0 || codenos.length()==0 || types.length()==0 || amounts.length()==0){
                  Toast.makeText(FarmerInsert.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
@@ -55,7 +57,8 @@ Button post;
                  farmer.setLocation(locations);
                  farmer.setPhoneno(phonenos);
                  farmer.setType(types);
-                 reff.child(codenos).setValue(farmer);
+                 farmer.setFtown(ftowns);
+                 reff.child(ftowns).child(codenos).setValue(farmer);
                  Toast.makeText(FarmerInsert.this,"သင်၏ရောင်းကုန်ပစ္စည်းအား စျေးကွက်သို့ တင်ပါိ့ပြီးပါပြီ။ အခြားကုန်များ ထပ်မံတင်လိုပါက ကုတ်နံပါတ် ပြောင်းပေးပါ။ ",Toast.LENGTH_LONG).show();
              }
 

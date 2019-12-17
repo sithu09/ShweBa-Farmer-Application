@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
@@ -98,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
@@ -107,11 +107,24 @@
             android:padding="15dp" />
 
         <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext"
+            android:ems="15"
+            android:hint="ဖုန်းနံပါတ်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
             android:id="@+id/location"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
@@ -119,16 +132,17 @@
             android:inputType="textPersonName"
             android:padding="15dp" />
 
+
         <EditText
-            android:id="@+id/phoneno"
+            android:id="@+id/ftown"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/edittext"
             android:ems="15"
-            android:hint="ဖုန်းနံပါတ်"
+            android:hint="မြို့နယ်"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -137,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:background="@drawable/loginbutton"
             android:text="ကုန်ပစ္စည်းအရောင်းတင်မည်"

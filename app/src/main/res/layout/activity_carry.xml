@@ -39,7 +39,31 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
 
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ယာဥ်အမျိုးအစား"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
+        <EditText
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext"
+            android:ems="25"
+            android:hint="ဖုန်းနံပါတ်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/name"
@@ -47,7 +71,7 @@
             android:layout_height="65dp"
             android:layout_marginLeft="50px"
             android:layout_marginRight="50px"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edittext"
             android:ems="25"
             android:hint="နာမည်"
@@ -60,34 +84,23 @@
             android:layout_height="65dp"
             android:layout_marginLeft="50px"
             android:layout_marginRight="50px"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edittext"
             android:ems="25"
             android:hint="နေရပ်"
             android:inputType="textPersonName"
             android:padding="15dp" />
+
         <EditText
-            android:id="@+id/phoneno"
+            android:id="@+id/ctown"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:layout_marginLeft="50px"
             android:layout_marginRight="50px"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edittext"
             android:ems="25"
-            android:hint="ဖုန်းနံပါတ်"
-            android:inputType="textPersonName"
-            android:padding="15dp" />
-        <EditText
-            android:id="@+id/type"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginLeft="50px"
-            android:layout_marginRight="50px"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/edittext"
-            android:ems="25"
-            android:hint="ယာဥ်အမျိုးအစား"
+            android:hint="မြို့နယ်"
             android:inputType="textPersonName"
             android:padding="15dp" />
 
@@ -97,7 +110,7 @@
             android:layout_height="65dp"
             android:layout_marginLeft="50px"
             android:layout_marginRight="50px"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/loginbutton"
             android:text="တင်မည်"
             android:textSize="20dp" />

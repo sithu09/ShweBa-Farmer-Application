@@ -1,10 +1,18 @@
 package com.mt.shweba;
 
 public class CarryInsert {
-    private String name,location,phone,type;
+    private String name,location,phone,type,ctown;
 
     public CarryInsert(){
 
+    }
+
+    public String getCtown() {
+        return ctown;
+    }
+
+    public void setCtown(String ctown) {
+        this.ctown = ctown;
     }
 
     public String getName() {

@@ -1,10 +1,19 @@
 package com.mt.shweba;
 
 public class FarmerI {
-    private String type,amount,codeno,name,location,phoneno,date;
+    private String type,amount,codeno,name,location,phoneno,date,ftown;
 
     public FarmerI(){
 
+    }
+
+
+    public String getFtown() {
+        return ftown;
+    }
+
+    public void setFtown(String ftown) {
+        this.ftown = ftown;
     }
 
     public String getDate() {
