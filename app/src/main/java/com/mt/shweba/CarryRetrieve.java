@@ -34,7 +34,7 @@ public class CarryRetrieve extends AppCompatActivity {
         final ArrayList<String> arrayList=new ArrayList<>();
         final ArrayAdapter<String> adapter=new ArrayAdapter<String>(CarryRetrieve.this,android.R.layout.simple_list_item_1,arrayList);
 
-        reff = FirebaseDatabase.getInstance().getReference().child("Carry");
+//        reff = FirebaseDatabase.getInstance().getReference().child("Carry");
         final BrokerInsert insert=new BrokerInsert();
 //
         market.setOnClickListener(new View.OnClickListener() {

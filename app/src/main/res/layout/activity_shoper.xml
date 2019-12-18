@@ -103,6 +103,18 @@
             android:inputType="textPersonName"
             android:padding="15dp" />
 
+        <EditText
+            android:id="@+id/stown"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext"
+            android:ems="15"
+            android:hint="မြို့နယ်"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
             <Button
                 android:id="@+id/post"

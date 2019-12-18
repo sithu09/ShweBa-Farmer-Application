@@ -14,9 +14,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Shoper extends AppCompatActivity {
-EditText type,price,name,location,codenos;
-Button post,spost;
-DatabaseReference reff,reffs;
+    EditText type,price,name,location,codenos,stown;
+    Button post,spost;
+    DatabaseReference reff,reffs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ DatabaseReference reff,reffs;
         name=(EditText)findViewById(R.id.name);
         location=(EditText)findViewById(R.id.location);
         codenos=(EditText)findViewById(R.id.codeno);
+        stown=(EditText) findViewById(R.id.stown);
         post=(Button)findViewById(R.id.post);
         spost=(Button)findViewById(R.id.spost);
 
@@ -39,6 +40,7 @@ DatabaseReference reff,reffs;
                 String names=name.getText().toString().trim();
                 String locations=location.getText().toString().trim();
                 String codeno=codenos.getText().toString().trim();
+                String towns=stown.getText().toString().trim();
 //                int selectfield=radioGroup.getCheckedRadioButtonId();
 //                fields=findViewById(selectfield);
 //                String field=fields.getText().toString();
@@ -53,7 +55,8 @@ DatabaseReference reff,reffs;
                     shoperpost.setName(names);
                     shoperpost.setPrice(prices);
                     shoperpost.setType(types);
-                    reff.child(codeno).setValue(shoperpost);
+                    shoperpost.setStown(towns);
+                    reff.child(towns).child(codeno).setValue(shoperpost);
                     Toast.makeText(Shoper.this,"သင့်ကုန်ပစ္စည်းများအား အရောင်းပို့သို့ တင်ပြီးပါပြီ\n" +"အခြားကုန်ပစ္စည်းများ တင်လိုပါက ထပ်မံ ဖြည့်စွက်ပါ။",Toast.LENGTH_LONG).show();
                 }
             }
@@ -67,6 +70,7 @@ DatabaseReference reff,reffs;
                 String names=name.getText().toString().trim();
                 String locations=location.getText().toString().trim();
                 String codeno=codenos.getText().toString().trim();
+                String towns=stown.getText().toString().trim();
 //                int selectfield=radioGroup.getCheckedRadioButtonId();
 //                fields=findViewById(selectfield);
 //                String field=fields.getText().toString();
@@ -81,7 +85,8 @@ DatabaseReference reff,reffs;
                     shoperpost.setName(names);
                     shoperpost.setPrice(prices);
                     shoperpost.setType(types);
-                    reffs.child(codeno).setValue(shoperpost);
+                    shoperpost.setStown(towns);
+                    reffs.child(towns).child(codeno).setValue(shoperpost);
                     Toast.makeText(Shoper.this,"သင့်ကုန်ပစ္စည်းများအား အရောင်းပို့သို့ တင်ပြီးပါပြီ\n" +"အခြားကုန်ပစ္စည်းများ တင်လိုပါက ထပ်မံ ဖြည့်စွက်ပါ။",Toast.LENGTH_LONG).show();
                 }
             }

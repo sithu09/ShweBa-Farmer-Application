@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Canel extends AppCompatActivity {
-    EditText topic,department,date,summary,nos;
+    EditText topic,department,date,summary,nos,mtown;
     Button posts;
     DatabaseReference reff;
     @Override
@@ -21,6 +21,7 @@ public class Canel extends AppCompatActivity {
         setContentView(R.layout.activity_canel);
         topic=(EditText)findViewById(R.id.topic);
         department=(EditText)findViewById(R.id.department);
+        mtown=(EditText)findViewById(R.id.mtown);
         nos=(EditText)findViewById(R.id.no);
         date=(EditText)findViewById(R.id.date);
         summary=(EditText)findViewById(R.id.summary);
@@ -33,19 +34,22 @@ public class Canel extends AppCompatActivity {
                 CanelInsert cinsert=new CanelInsert();
                 String topics=topic.getText().toString().trim();
                 String departments=department.getText().toString().trim();
+                String mtowns=mtown.getText().toString().trim();
                 String dates=date.getText().toString().trim();
                 String no=nos.getText().toString().trim();
                 String summmaries=summary.getText().toString().trim();
 
-                if(topics.length()==0 || departments.length()==0 || dates.length()==0 || summmaries.length()==0 ||no.length()==0){
+                if(topics.length()==0 || departments.length()==0 || dates.length()==0 || summmaries.length()==0 ||no.length()==0 || mtowns.length()==0){
                     Toast.makeText(Canel.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
-                }
+                }//စစ်ဆေးချက်တွေ လိုနေပါသေးတယ် :3
+                //လိုတော့ ယီးဖြစ်လား
                 else{
                     cinsert.setDate(dates);
                     cinsert.setDepartment(departments);
+                    cinsert.setMtown(mtowns);
                     cinsert.setSummary(summmaries);
                     cinsert.setTopic(topics);
-                    reff.child(no).setValue(cinsert);
+                    reff.child(mtowns).child(no).setValue(cinsert);
                     Toast.makeText(Canel.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်",Toast.LENGTH_LONG).show();
                 }
             }

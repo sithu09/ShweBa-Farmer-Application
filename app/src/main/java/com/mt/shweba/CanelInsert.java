@@ -1,10 +1,18 @@
 package com.mt.shweba;
 
 public class CanelInsert {
-    private String topic,department,date,summary,no;
+    private String topic,department,date,summary,no,mtown;
 
     public CanelInsert(){
 
+    }
+
+    public String getMtown() {
+        return mtown;
+    }
+
+    public void setMtown(String mtown) {
+        this.mtown = mtown;
     }
 
     public String getNo() {

@@ -1,10 +1,18 @@
 package com.mt.shweba;
 
 public class Shoperpost {
-    private String type,price,name,location,codeno;
+    private String type,price,name,location,codeno,stown;
 
     public Shoperpost(){
 
+    }
+
+    public String getStown() {
+        return stown;
+    }
+
+    public void setStown(String stown) {
+        this.stown = stown;
     }
 
     public String getType() {

@@ -60,6 +60,16 @@
             android:inputType="textPersonName"/>
 
         <EditText
+            android:id="@+id/mtown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30px"
+            android:paddingBottom="70px"
+            android:layout_marginTop="35px"
+            android:hint="မြို့နယ်\n"
+            android:inputType="textPersonName"/>
+
+        <EditText
             android:id="@+id/no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
