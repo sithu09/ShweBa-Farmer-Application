@@ -93,3 +93,4 @@ public class Shoper extends AppCompatActivity {
         });
     }
 }
+//တစ်ခါတစ်လေတော့လည်း အဝေးဆုံးကို ထွက်ပြေးသွားချင်နေမိတယ်

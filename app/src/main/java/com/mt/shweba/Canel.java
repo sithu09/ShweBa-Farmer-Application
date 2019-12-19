@@ -38,18 +38,23 @@ public class Canel extends AppCompatActivity {
                 String dates=date.getText().toString().trim();
                 String no=nos.getText().toString().trim();
                 String summmaries=summary.getText().toString().trim();
+                String code="G-9660";
 
-                if(topics.length()==0 || departments.length()==0 || dates.length()==0 || summmaries.length()==0 ||no.length()==0 || mtowns.length()==0){
+                if(topics.length()==0 || departments.length()==0 || dates.length()==0 || summmaries.length()==0 || !no.equals("G-9660") || mtowns.length()==0){
                     Toast.makeText(Canel.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                 }//စစ်ဆေးချက်တွေ လိုနေပါသေးတယ် :3
                 //လိုတော့ ယီးဖြစ်လား
+
+//                else if(no!="G-9660" ){
+//                    Toast.makeText(Canel.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
+//                }
                 else{
                     cinsert.setDate(dates);
                     cinsert.setDepartment(departments);
                     cinsert.setMtown(mtowns);
                     cinsert.setSummary(summmaries);
                     cinsert.setTopic(topics);
-                    reff.child(mtowns).child(no).setValue(cinsert);
+                    reff.child(mtowns).child(topics).setValue(cinsert);
                     Toast.makeText(Canel.this,"ဖြည့်စွက်မှုအောင်မြင်ပါသည်",Toast.LENGTH_LONG).show();
                 }
             }

@@ -76,7 +76,7 @@
             android:paddingLeft="30px"
             android:paddingBottom="70px"
             android:layout_marginTop="35px"
-            android:hint="အမှတ်စဥ်\n"
+            android:hint="ကုတ်နံပါတ်\n"
             android:inputType="textPersonName"/>
 
         <EditText
