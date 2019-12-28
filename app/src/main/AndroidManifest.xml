@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ImageAdapter" />
         <activity android:name=".FarmerNews" />
         <activity android:name=".Feedback" />
         <activity android:name=".TechnicalRetrieve" />
