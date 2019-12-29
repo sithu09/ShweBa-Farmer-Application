@@ -46,7 +46,7 @@ public class TechnicalRetrieve extends AppCompatActivity {
                 mAdapter=new ImageAdapter(TechnicalRetrieve.this,mUploads);
                 mRecyclerView.setAdapter(mAdapter);
             }
-
+// llll error
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(TechnicalRetrieve.this,databaseError.getMessage(),Toast.LENGTH_LONG).show();
