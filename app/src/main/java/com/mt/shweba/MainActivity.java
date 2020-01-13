@@ -73,6 +73,7 @@ String farmer,canel,carry,broker,shoper;
 //                                Toast.makeText(MainActivity.this,field,Toast.LENGTH_LONG).show();
 
 
+
                             }
                             else if (uname.getText().toString().equals(d_name) && upassword.getText().toString().equals(d_password)&&field.equals(canel)){
                                 Intent intent = new Intent(MainActivity.this, Canel.class);

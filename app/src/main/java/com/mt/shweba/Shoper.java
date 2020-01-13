@@ -45,7 +45,7 @@ public class Shoper extends AppCompatActivity {
 //                fields=findViewById(selectfield);
 //                String field=fields.getText().toString();
 
-                if(types.length()==0 || prices.length()==0 || name.length()==0 || locations.length()==0 || codeno.length()==0){
+                if(types.length()==0 || prices.length()==0 || name.length()==0 || locations.length()==0 || codeno.length()<6){
                     Toast.makeText(Shoper.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                 }
                 else{
@@ -75,7 +75,7 @@ public class Shoper extends AppCompatActivity {
 //                fields=findViewById(selectfield);
 //                String field=fields.getText().toString();
 
-                if(types.length()==0 || prices.length()==0 || name.length()==0 || locations.length()==0 || codeno.length()==0){
+                if(types.length()==0 || prices.length()==0 || name.length()==0 || locations.length()==0 || codeno.length()<6){
                     Toast.makeText(Shoper.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                 }
                 else{

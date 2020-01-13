@@ -47,7 +47,7 @@ Button post;
              String amounts=amount.getText().toString().trim();
              String ftowns=ftown.getText().toString().trim();
 
-             if(dates.length()==0 || names.length()==0 || locations.length()==0 || phonenos.length()==0 || codenos.length()==0 || types.length()==0 || amounts.length()==0){
+             if(dates.length()==0 || names.length()==0 || locations.length()==0 || phonenos.length()==0 || codenos.length()<6 || types.length()==0 || amounts.length()==0){
                  Toast.makeText(FarmerInsert.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
              }
              else {

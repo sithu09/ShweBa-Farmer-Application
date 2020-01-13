@@ -50,7 +50,7 @@ public class Brokerpost extends AppCompatActivity {
                 String codeno=codenos.getText().toString().trim();
                 String btown=btowns.getText().toString().trim();
 
-                if(good.length()==0 || price.length()==0 || date.length()==0 || name.length()==0 || location.length()==0 || phoneno.length()==0 || codeno.length()==0 || btown.length()==0){
+                if(good.length()==0 || price.length()==0 || date.length()==0 || name.length()==0 || location.length()==0 || phoneno.length()==0 || codeno.length()<6 || btown.length()==0){
                     Toast.makeText(Brokerpost.this,"ပြည့်စုံစွာ ဖြည့်စွက်ပေးပါ",Toast.LENGTH_LONG).show();
                 }
                 else {
